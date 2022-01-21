@@ -4,7 +4,10 @@
   "description": "js native blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/VasilyC888/my_Blog/issues"
   },
-  "homepage": "https://github.com/VasilyC888/my_Blog#readme"
+  "homepage": "https://github.com/VasilyC888/my_Blog#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
 }
