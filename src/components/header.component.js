@@ -7,12 +7,12 @@ export class HeaderComponent extends Component {
     }
 
     init() {
-        this.$el.querySelector('.js-header-start').addEventListener('click', buttonHandler.bind(this))
 
+        var btn = this.$el.querySelector('.js-header-start')
 
+        btn && btn.addEventListener('click', buttonHandler.bind(this))
 
     }
-
 }
 
 function buttonHandler() {
